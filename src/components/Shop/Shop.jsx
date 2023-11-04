@@ -28,8 +28,8 @@ const Shop = () => {
     */
 
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([])
-    // const cart = useLoaderData();
+    const carts = useLoaderData();
+    const [cart, setCart] = useState(carts)
     // const {count} = useLoaderData()
     const [count, setCount] = useState(0)
     const [currentPage, setCurrentPage] = useState(0);
